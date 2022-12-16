@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'airbnb',
     'eslint:recommended',
+    'airbnb-typescript',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -16,7 +17,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    project: './tsconfig.json',
   },
-  plugins: ['airbnb', 'react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {},
 };
